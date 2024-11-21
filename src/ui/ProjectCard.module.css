@@ -1,0 +1,174 @@
+.projectCard {
+  position: relative;
+  /* background-color: var(--clr-grey-100); */
+  backdrop-filter: brightness(0.4);
+  border-radius: 0.35em;
+  box-shadow: 0 0 16px var(--clr-accent-900-50);
+  width: 100%;
+  min-height: 30rem;
+  color: var(--clr-accent-900);
+  isolation: isolate;
+  overflow: hidden;
+  padding: 11rem 0 0;
+  transition: transform 250ms ease;
+}
+
+.techStack {
+  position: absolute;
+  z-index: 2;
+
+  padding: 1em;
+  width: 100%;
+  top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.techStack > h4 {
+  font-size: var(--fs-400);
+  font-weight: 700;
+  background-color: var(--clr-primary-450);
+  padding: 0.4em 1em;
+  border-radius: 50vw;
+  color: var(--clr-accent-100);
+}
+
+.projectCard > img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  object-fit: cover;
+  filter: brightness(0.4) blur(0.15rem);
+}
+
+.cardBody {
+  --padding-side: 1rem;
+
+  width: 100%;
+  height: 55%;
+  padding: 0 var(--padding-side) 2rem;
+  color: var(--clr-accent-100);
+  background-image: linear-gradient(
+    transparent,
+    var(--clr-accent-900-50) 10%,
+    var(--clr-accent-900-50)
+  );
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  display: grid;
+  grid-template-rows: 0.2fr minmax(7rem, 1fr) 0.2fr;
+
+  transition: transform 500ms;
+}
+
+.cardBody > h3 {
+  font-size: var(--fs-900);
+  position: relative;
+  width: max-content;
+  padding: 1rem 0 0;
+}
+
+.cardBody > h3::after {
+  content: "";
+  position: absolute;
+  width: calc(var(--padding-side) + 100%);
+  height: 4px;
+  bottom: -0.5rem;
+  left: calc(var(--padding-side) * -1);
+  background-color: var(--clr-primary-200);
+}
+
+.cardBody > p {
+  font-size: var(--fs-400);
+  font-weight: 600;
+}
+
+.cta {
+  width: fit-content;
+  margin-inline: auto;
+  display: flex;
+  gap: 1rem;
+  color: var(--clr-accent-100);
+  padding: 1em;
+}
+
+.cta > a {
+  padding: 0.4em 0.65em;
+  font-size: var(--fs-600);
+  background: var(--clr-primary-600);
+  border-radius: 0.3em;
+  transition: background-color 250ms;
+  display: flex;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.cta > a > svg {
+  width: 2rem;
+  height: 2rem;
+  fill: var(--clr-accent-100);
+}
+
+@media (hover: hover) {
+  .cardBody > h3::after {
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 500ms ease;
+  }
+  .cardBody {
+    transform: translateY(50%);
+  }
+  .projectCard:hover,
+  .projectCard:focus-within {
+    transform: scale(1.02);
+  }
+
+  .projectCard > img,
+  .projectCard > img {
+    filter: brightness(0.4) blur(0);
+  }
+
+  .projectCard:hover > img,
+  .projectCard:focus-within > img {
+    transition: filter 500ms 1000ms;
+    filter: brightness(0.2) blur(0.1rem);
+  }
+
+  .projectCard:hover .cardBody > h3::after,
+  .projectCard:focus-within .cardBody > h3::after {
+    transform: scaleX(1);
+  }
+
+  .projectCard:hover .cardBody,
+  .projectCard:focus-within .cardBody {
+    transform: translateY(0);
+    transition-delay: 500ms;
+  }
+
+  .cardBody > *:not(h3),
+  .cardBody > *:not(h3) {
+    opacity: 0;
+    transition: opacity 500ms ease;
+  }
+
+  .projectCard:hover .cardBody > *:not(h3),
+  .projectCard:focus-within .cardBody > *:not(h3) {
+    opacity: 1;
+    transition-delay: 1000ms;
+  }
+
+  .cta > a:hover,
+  .cta > a:focus-visible {
+    background: var(--clr-primary-400);
+  }
+}
+
+.projectCard:focus-within .cardBody {
+  transition-duration: 0ms;
+}
