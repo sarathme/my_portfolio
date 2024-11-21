@@ -1,0 +1,36 @@
+.input_group {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--fs-600);
+  gap: 0.7rem;
+  margin-bottom: 1rem;
+}
+
+.input_group > label::after {
+  content: attr(data-error);
+  font-size: var(--fs-400);
+  color: red;
+  margin-left: 0.5rem;
+}
+
+.input_group:global(.not_valid) > :last-child {
+  outline: 2px solid red;
+
+  border: none;
+}
+
+.input_group > :last-child {
+  padding: 0.5em;
+  border: 1px solid var(--clr-accent-900-50);
+  outline: none;
+  width: min(100%, 30rem);
+  border-radius: 0.35rem;
+  max-height: 8rem;
+  max-width: 100%;
+}
+
+.input_group > :last-child:focus {
+  outline: 2px solid var(--clr-primary-600);
+  border: none;
+  outline-offset: 4px;
+}
