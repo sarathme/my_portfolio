@@ -1,0 +1,61 @@
+.navContainer.primary {
+  --_textColor: var(--clr-accent-100);
+  --_backgroundColor: var(--clr-primary-450);
+  --_nav-bg: var(--clr-grey-100-50);
+}
+.navContainer.secondary {
+  --_textColor: var(--clr-primary-450);
+  --_backgroundColor: var(--clr-accent-100);
+  --_nav-bg: var(--clr-primary-200-50);
+}
+
+.navContainer {
+  width: fit-content;
+  margin: 0 auto;
+  border-radius: 50vw;
+  background-color: var(--_nav-bg);
+  box-shadow: 0 0 8px var(--_backgroundColor);
+  backdrop-filter: blur(20rem);
+}
+.sectionNav {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+
+  font-size: var(--fs-600);
+  gap: 0.85rem;
+}
+
+.sectionNav > li {
+  color: var(--_backgroundColor);
+}
+
+.sectionNav button {
+  background-color: transparent;
+  padding: 0.7em 0.9em;
+  border-radius: 50vw;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  min-width: 5rem;
+  transition: background-color 250ms ease-in-out;
+  color: inherit;
+  font-weight: 600;
+}
+
+.sectionNav button.active {
+  background-color: var(--_backgroundColor);
+  color: var(--_textColor);
+  font-weight: 600;
+  box-shadow: 0 0 8px var(--_backgroundColor);
+}
+
+@media (hover) {
+  .sectionNav button:hover,
+  .sectionNav button:focus-visible {
+    background-color: var(--_backgroundColor);
+    color: var(--_textColor);
+  }
+}
