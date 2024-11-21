@@ -1,0 +1,40 @@
+.header {
+  background-color: var(--clr-primary-800);
+  padding: 1rem;
+}
+
+.wrapper {
+  width: min(100%, 85rem);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  gap: 1rem;
+}
+
+.logo {
+  min-width: 2rem;
+  max-width: 4rem;
+  /* height: auto; */
+}
+
+.nav-list {
+  font-size: var(--fs-600);
+  font-weight: 400;
+  display: flex;
+  gap: var(--fs-800);
+  color: var(--clr-grey-100);
+  /* padding: 1rem; */
+}
+
+.nav-list > li {
+  transition: transform 250ms;
+}
+
+@media (hover) {
+  .nav-list > li:focus-within,
+  .nav-list > li:hover {
+    transform: scale(1.15);
+    color: var(--clr-accent-100);
+  }
+}
