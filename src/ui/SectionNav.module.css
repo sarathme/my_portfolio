@@ -14,7 +14,7 @@
   margin: 0 auto;
   border-radius: 50vw;
   background-color: var(--_nav-bg);
-  box-shadow: 0 0 8px var(--_backgroundColor);
+  box-shadow: 0 0 2px var(--_backgroundColor);
   backdrop-filter: blur(20rem);
 }
 .sectionNav {
