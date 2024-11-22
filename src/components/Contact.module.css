@@ -9,7 +9,7 @@
 
 .contact_container > * {
   width: min(40rem, 90%);
-  height: 95%;
+  min-height: 32rem;
   position: absolute;
   top: 50%;
   left: 55%;
@@ -21,4 +21,21 @@
 .detail {
   transform: translate(-60%, -50%);
   background-color: var(--clr-primary-600);
+  color: white;
+}
+
+.socials {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.socials svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  transition: transform 100ms ease-in;
+}
+
+.socials svg:hover {
+  transform: scale(1.25);
 }

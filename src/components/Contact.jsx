@@ -13,7 +13,31 @@ function Contact() {
       className="grid-section">
       <SectionNav options={[{ label: "Contact Details", value: "call" }]} />
       <div className={styles.contact_container}>
-        <div className={styles.detail}>Detail</div>
+        <div className={styles.detail}>
+          <ul className={styles.socials} role="list">
+            <li>
+              <a href="#">
+                <svg>
+                  <use xlinkHref="#linkedin" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg>
+                  <use xlinkHref="#mail" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg>
+                  <use xlinkHref="#github" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
         <Form />
       </div>
     </Section>
