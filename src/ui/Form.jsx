@@ -104,7 +104,13 @@ function Form() {
           value={formik.values.message}
         />
       </InputGroup>
-      <button type="submit" disabled={!formik.isValid || isSending}>
+      <button
+        type="submit"
+        disabled={
+          !formik.isValid ||
+          isSending ||
+          !(formik.values.name && formik.values.email && formik.values.message)
+        }>
         {isSending ? <Spinner /> : "Send"}
       </button>
     </form>
