@@ -5,7 +5,7 @@ function Details({ children }) {
     <div className={styles.details}>
       <ul className={styles.socials} role="list">
         <li>
-          <a href="linkedin.com/in/sarasraman-n-46003420b">
+          <a href="https://linkedin.com/in/sarasraman-n-46003420b">
             <svg>
               <use xlinkHref="#linkedin" />
             </svg>
