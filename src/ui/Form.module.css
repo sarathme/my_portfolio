@@ -1,6 +1,13 @@
 .contact_form {
-  transform: translate(-48%, -54%);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 1.5em;
+  top: 10%;
+  left: 10%;
   background-color: var(--clr-accent-100);
+  border-radius: 0.4rem;
+  box-shadow: 0 0 10px 2px var(--clr-primary-900-50);
 }
 
 .contact_form > button {

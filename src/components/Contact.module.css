@@ -1,41 +1,7 @@
 .contact_container {
   display: flex;
+  justify-content: center;
   gap: 1rem;
-  position: relative;
   width: 100%;
-
   padding: 1em;
-}
-
-.contact_container > * {
-  width: min(40rem, 90%);
-  min-height: 32rem;
-  position: absolute;
-  top: 50%;
-  left: 55%;
-  border-radius: 0.35em;
-  padding: 2rem;
-  box-shadow: 0 0 3px var(--clr-accent-900-50);
-}
-
-.detail {
-  transform: translate(-60%, -50%);
-  background-color: var(--clr-primary-600);
-  color: white;
-}
-
-.socials {
-  display: flex;
-  gap: 1rem;
-  flex-direction: column;
-}
-
-.socials svg {
-  width: 1.5rem;
-  height: 1.5rem;
-  transition: transform 100ms ease-in;
-}
-
-.socials svg:hover {
-  transform: scale(1.25);
 }
