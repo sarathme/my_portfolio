@@ -36,6 +36,9 @@
   --clr-grey-100: #eaeaea;
   --clr-grey-100-50: hsla(0, 0%, 92%, 0.1);
 
+  --clr-error: #ff1700;
+  --clr-live: #2eb086;
+
   /* ----------- FONT SIZES ------------- */
 
   --fs-xxxl: 2.75rem;

@@ -74,6 +74,20 @@
   width: max-content;
   padding: 1rem 0 0;
 }
+.cardBody > h3 > span {
+  width: max-content;
+  background-color: var(--clr-error);
+  font-size: var(--fs-400);
+  padding: 0.3em 0.6em;
+  border-radius: 0.28rem;
+  position: absolute;
+  left: 120%;
+  top: 40%;
+}
+
+.live {
+  background-color: var(--clr-live) !important;
+}
 
 .cardBody > h3::after {
   content: "";

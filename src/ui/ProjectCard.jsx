@@ -13,7 +13,16 @@ function ProjectCard({ project }) {
       />
 
       <div className={`${styles.cardBody} flow`}>
-        <h3>{project.title}</h3>
+        <h3>
+          {project.title}{" "}
+          {project.status ? (
+            <span className={project.status[0] ? styles.live : ""}>
+              {project.status[1]}
+            </span>
+          ) : (
+            ""
+          )}
+        </h3>
         <p>{project.description}</p>
         {project.cta && (
           <div className={styles.cta}>

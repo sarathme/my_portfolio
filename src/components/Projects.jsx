@@ -24,6 +24,7 @@ const projects = [
     ],
     techStacks: ["ReactJS", "CSS"],
     catogary: "frontend",
+    status: [true, "live"],
   },
   {
     id: uniqid(),
@@ -37,6 +38,7 @@ const projects = [
       "https://firebasestorage.googleapis.com/v0/b/portfolio-sarasraman.appspot.com/o/portfolio-images%2Fworld-wise.png?alt=media&token=69c02a3c-cb49-4eb3-bfc2-65a49ea8f7d4",
     techStacks: ["ReactJS", "React Router DOM", "CSS Modules"],
     catogary: "frontend",
+    status: [false, "Not Deployed"],
   },
   {
     id: uniqid(),
@@ -48,7 +50,9 @@ const projects = [
     catogary: "frontend",
     imageUrl:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-sarasraman.appspot.com/o/portfolio-images%2Fmy_portfolio.png?alt=media&token=0b84c962-43af-4701-b7e7-e34fa147d06a",
+    status: [true, "Live"],
   },
+
   {
     id: uniqid(),
     title: "CMS",
@@ -65,31 +69,40 @@ const projects = [
     catogary: "frontend",
     imageUrl:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-sarasraman.appspot.com/o/portfolio-images%2Fcms.png?alt=media&token=05da8121-5bc2-48e0-9f83-7052ec48c3b9",
+    status: [false, "Not Optimized for mobile"],
   },
 
   {
     id: uniqid(),
     title: "AMS",
     description:
-      "Project for my internship period at Wlk Horizons. This is to create an API for managing attendance of an organisation.",
+      "Project for my internship period at Walk Horizons. This is to create an API for managing attendance of an organisation.",
     cta: [
-      { name: "Github", url: "" },
-      { name: "Preview", url: "" },
+      { name: "Github", url: "https://github.com/sarathme/AMS_Project" },
+      {
+        name: "Postman",
+        url: "https://documenter.getpostman.com/view/16657839/2sAYBSktrd",
+      },
     ],
-    techStacks: ["HTML", "CSS", "JavaScript"],
+    techStacks: ["NodeJS", "ExpressJs", "MongoDB", "Mongoose"],
     catogary: "backend",
+    status: [false, "Not Deployed"],
   },
   {
     id: uniqid(),
-    title: "Natours",
+    title: "CRM Backend",
     description:
-      "Lorem ipsum odor amet, consectetuer adipiscing elit. Mi mollis ante mauris varius dignissim vehicula.",
+      "This is the backend code for my CRM project. Implemented authorization and authentication feature,route handling and error handling",
     cta: [
-      { name: "Github", url: "" },
-      { name: "Preview", url: "" },
+      { name: "Github", url: "https://github.com/sarathme/CRM-backend-node" },
+      {
+        name: "Postman",
+        url: "https://documenter.getpostman.com/view/16657839/2sAXqy3ze4",
+      },
     ],
-    techStacks: ["HTML", "CSS", "JavaScript"],
-    catogary: "design",
+    techStacks: ["NodeJS", "ExpressJs", "MongoDB", "Mongoose"],
+    catogary: "backend",
+    status: [true, "Live"],
   },
 ];
 
@@ -101,10 +114,6 @@ const projectOptions = [
   {
     label: "Backend",
     value: "backend",
-  },
-  {
-    label: "Design",
-    value: "design",
   },
 ];
 
