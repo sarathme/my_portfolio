@@ -12,7 +12,7 @@ function Contact() {
       diagonal={false}
       id="contact"
       className="grid-section">
-      <SectionNav options={[{ label: "Contact Details", value: "call" }]} />
+      <SectionNav options={[{ label: "Contact Me", value: "call" }]} />
       <div className={styles.contact_container}>
         <Details>
           <Form />

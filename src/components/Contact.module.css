@@ -1,7 +1,14 @@
 .contact_container {
   display: flex;
   justify-content: center;
+  height: 28rem;
   gap: 1rem;
-  width: 100%;
+  width: 95%;
   padding: 1em;
+}
+
+@media (min-width: 37.5em) {
+  .contact_container {
+    height: 32rem;
+  }
 }

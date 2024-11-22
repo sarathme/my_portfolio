@@ -18,7 +18,7 @@ function validate(values) {
     errors.email = "*Please provide a valid email";
   }
   if (!values.message) {
-    errors.message = "*Please write a message to me";
+    errors.message = "*This field cannot be empty";
   }
 
   return errors;

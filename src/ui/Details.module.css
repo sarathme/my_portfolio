@@ -37,8 +37,8 @@
 }
 
 .socials svg {
-  width: 1.75rem;
-  height: 1.75rem;
+  width: var(--fs-800);
+  height: var(--fs-800);
   transition: transform 100ms ease-in;
 }
 
