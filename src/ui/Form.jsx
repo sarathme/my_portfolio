@@ -29,7 +29,7 @@ function Form() {
   const formik = useFormik({
     initialValues: { name: "", email: "", message: "" },
     validate,
-    onSubmit: (values) => {
+    onSubmit: (values, { resetForm }) => {
       setIsSending(true);
       const formData = {
         user_name: values.name,
@@ -46,7 +46,10 @@ function Form() {
             publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
           }
         )
-        .then(() => toast.success("Email sent successfully"))
+        .then(() => {
+          resetForm();
+          toast.success("Email sent successfully");
+        })
         .catch(() => toast.error("Error while sending email. Please try again"))
         .finally(() => setIsSending(false));
     },

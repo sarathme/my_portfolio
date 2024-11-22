@@ -11,13 +11,13 @@ function Details({ children }) {
             </svg>
           </a>
         </li>
-        <li>
+        {/* <li>
           <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sarathsatheesh603@gmail.com">
             <svg>
               <use xlinkHref="#mail" />
             </svg>
           </a>
-        </li>
+        </li> */}
         <li>
           <a href="https://github.com/sarathme">
             <svg>
