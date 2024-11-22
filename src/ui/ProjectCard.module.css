@@ -118,7 +118,7 @@
   fill: var(--clr-accent-100);
 }
 
-@media (hover) {
+@media (hover: hover) {
   .cardBody > h3::after {
     transform: scaleX(0);
     transform-origin: left;
