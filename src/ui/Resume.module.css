@@ -1,4 +1,4 @@
-.resume > a:link,
+/* .resume > a:link ,
 .resume > a:visited {
   padding: 0.6em;
   border: none;
@@ -14,4 +14,22 @@
 .resume > a:hover,
 .resume > a:focus {
   background-color: var(--clr-secondary-500);
+} */
+
+.resume button {
+  padding: 0.6em;
+  border: none;
+  background-color: var(--clr-secondary-450);
+  color: var(--clr-accent-100);
+  font-size: var(--fs-600);
+  font-weight: 500;
+  border-radius: 0.4em;
+  cursor: pointer;
+  transform-origin: left;
+  transition: background 200ms ease-in, transform 200ms ease-in;
+}
+.resume button:hover,
+.resume button:focus {
+  background-color: var(--clr-secondary-500);
+  transform: scale(1.05);
 }
