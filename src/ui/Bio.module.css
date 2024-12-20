@@ -1,5 +1,4 @@
 .bioContainer {
-  padding: 1em;
   font-size: var(--fs-600);
   opacity: 0;
   animation: reveal 500ms linear forwards;
