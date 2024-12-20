@@ -48,9 +48,11 @@ function Form() {
         )
         .then(() => {
           resetForm();
-          toast.success("Email sent successfully");
+          toast.success(
+            "Thank you for contacting me. I will reply to you ASAP"
+          );
         })
-        .catch(() => toast.error("Error while sending email. Please try again"))
+        .catch(() => toast.error("Error while sending. Please try again"))
         .finally(() => setIsSending(false));
     },
   });
