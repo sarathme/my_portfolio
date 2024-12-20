@@ -63,16 +63,16 @@
 }
 
 .btnContainer > a {
-  padding: 1em;
-  text-transform: uppercase;
-  font-size: var(--fs-600);
-  font-weight: 700;
+  padding: 0.65rem;
+  /* text-transform: uppercase; */
+  font-size: var(--fs-800);
+  font-weight: 500;
   background-color: var(--clr-primary-450);
 
   outline: none;
   border: none;
   cursor: pointer;
-  border-radius: 0.4em;
+  border-radius: 0.35em;
   transition: padding 250ms, background-color 500ms;
   user-select: none;
   -webkit-user-select: none;
@@ -85,9 +85,10 @@
   gap: 1rem;
 }
 
-.btnContainer > a:hover {
+.btnContainer > a:hover,
+.btnContainer > a:focus {
   background-color: var(--clr-primary-450);
-  padding: 1em 1.75em;
+  padding: 0.65rem 1rem;
 }
 
 .heroIntroText > p {
