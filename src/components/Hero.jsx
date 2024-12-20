@@ -1,3 +1,4 @@
+import Resume from "../ui/Resume";
 import styles from "./Hero.module.css";
 
 function Hero() {
@@ -14,6 +15,7 @@ function Hero() {
             <a href="#about">About Me</a>
             <a href="#contact">Contact Me</a>
           </div>
+          <Resume />
           <p>Open To Opportunity</p>
         </div>
       </div>

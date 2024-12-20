@@ -1,0 +1,17 @@
+.resume > a:link,
+.resume > a:visited {
+  padding: 0.6em;
+  border: none;
+  background-color: var(--clr-secondary-450);
+  color: var(--clr-accent-100);
+  font-size: var(--fs-600);
+  font-weight: 500;
+  border-radius: 0.4em;
+  cursor: pointer;
+
+  transition: background 200ms ease-in, transform 200ms 200ms ease-in;
+}
+.resume > a:hover,
+.resume > a:focus {
+  background-color: var(--clr-secondary-500);
+}
