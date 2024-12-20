@@ -28,7 +28,7 @@
 
   --clr-accent-900: #1b181e;
   --clr-accent-900-50: hsla(270, 11%, 11%, 0.5);
-  --clr-accent-100: #f7f7f7;
+  --clr-accent-100: hsl(0, 0%, 97%);
 
   --clr-accent-100-15: hsla(288, 38%, 95%, 0.15);
 
