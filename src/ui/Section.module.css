@@ -4,7 +4,6 @@
   position: relative;
   color: var(--clr-primary-450);
   margin-bottom: 4rem;
-  padding: 2rem 1rem;
 }
 .section > h1 {
   font-size: var(--fs-xl);
