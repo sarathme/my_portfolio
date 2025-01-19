@@ -29,7 +29,7 @@ function ProjectCard({ project }) {
             {project.cta.map((link) => (
               <a key={link.name} href={link.url} target="_blank">
                 <svg>
-                  <use xlinkHref={`#${link.name.toLowerCase()}`} />
+                  <use xlinkHref={`#${link.icon}`} />
                 </svg>
                 {link.name}
               </a>
