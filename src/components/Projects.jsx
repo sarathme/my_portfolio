@@ -104,13 +104,18 @@ const projects = [
     cta: [
       {
         name: "React",
-        url: "https://github.com/sarathme/CRM-frontend-react",
+        url: "https://github.com/sarathme/natours-frontend-react",
         icon: "github",
       },
       {
         name: "NodeJS",
-        url: "https://github.com/sarathme/CRM-backend-node",
+        url: "https://github.com/sarathme/natours-backend-node",
         icon: "github",
+      },
+      {
+        name: "Preview",
+        url: "https://nimble-platypus-10f58b.netlify.app/",
+        icon: "preview",
       },
     ],
     techStacks: [
@@ -120,11 +125,12 @@ const projects = [
       "NodeJS",
       "Express.js",
       "MongoDB",
+      "Razorpay",
     ],
     catogary: "fullstack",
     imageUrl:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-sarasraman.appspot.com/o/portfolio-images%2Fnatours.png?alt=media&token=acfe0281-a103-4af1-a325-39a08ffe84db",
-    status: [false, "On development"],
+    status: [false, "Desktop Only"],
   },
   {
     id: uniqid(),
