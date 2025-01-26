@@ -65,8 +65,7 @@ const projects = [
   {
     id: uniqid(),
     title: "CRM",
-    description:
-      "This is React UI for the CRM project which gets data from an API which I also created. /n Credentials: /n EmpCode: ADMIN /n Password: pass1234",
+    description: "Credentials: /n EmpCode: ADMIN /n Password: pass1234",
     cta: [
       {
         name: "React",
@@ -101,7 +100,7 @@ const projects = [
     id: uniqid(),
     title: "Natours",
     description:
-      "Fictional tour selling web app with various tours. /n Credentials: /n Email: admin@natours.com /n Password: pass1234",
+      "Credentials: /n Email: admin@natours.com /n Password: pass1234",
     cta: [
       {
         name: "React",
