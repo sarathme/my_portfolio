@@ -5,7 +5,7 @@
   border-radius: 0.35em;
   box-shadow: 0 0 16px var(--clr-accent-900-50);
   width: 100%;
-  min-height: 30rem;
+  min-height: 32rem;
   color: var(--clr-accent-900);
   isolation: isolate;
   overflow: hidden;
@@ -64,7 +64,7 @@
   transform: translateY(0);
   display: grid;
 
-  grid-template-rows: 0.2fr minmax(7rem, 1fr) 0.2fr;
+  grid-template-rows: 0.2fr auto 0.2fr;
 
   transition: transform 500ms;
 }
@@ -101,9 +101,9 @@
   background-color: var(--clr-primary-200);
 }
 
-.cardBody > p {
+.cardBody p {
   font-size: var(--fs-400);
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .cta {

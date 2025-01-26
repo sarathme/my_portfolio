@@ -1,6 +1,7 @@
 import styles from "./ProjectCard.module.css";
 
 function ProjectCard({ project }) {
+  console.log(project.description.split("/n"));
   return (
     <div className={`${styles.projectCard}`}>
       <img
@@ -23,7 +24,9 @@ function ProjectCard({ project }) {
             ""
           )}
         </h3>
-        <p>{project.description}</p>
+        {project.description.split("/n").map((p, i) => (
+          <p key={i}>{p}</p>
+        ))}
         {project.cta && (
           <div className={styles.cta}>
             {project.cta.map((link) => (

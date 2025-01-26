@@ -64,9 +64,9 @@ const projects = [
 
   {
     id: uniqid(),
-    title: "CMS",
+    title: "CRM",
     description:
-      "This is React UI for the CMS project which gets data from an API which I also created. Not a feature complete app working on some implementations and responsiveness.",
+      "This is React UI for the CRM project which gets data from an API which I also created. /n Credentials: /n EmpCode: ADMIN /n Password: pass1234",
     cta: [
       {
         name: "React",
@@ -100,7 +100,8 @@ const projects = [
   {
     id: uniqid(),
     title: "Natours",
-    description: "Fictional tour selling web app with various tours.",
+    description:
+      "Fictional tour selling web app with various tours. /n Credentials: /n Email: admin@natours.com /n Password: pass1234",
     cta: [
       {
         name: "React",
@@ -135,7 +136,7 @@ const projects = [
   {
     id: uniqid(),
     title: "Wild Oasis",
-    description: `Credentials  Email: admin@wildoasis.com, password: pass1234`,
+    description: `Credentials: /nEmail: admin@wildoasis.com/n password: pass1234`,
     cta: [
       {
         name: "React",
