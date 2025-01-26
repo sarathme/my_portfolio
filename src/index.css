@@ -218,7 +218,7 @@ textarea:not([rows]) {
 */
 
 .flow > *:not(:last-child) {
-  margin-bottom: var(--fs-800);
+  margin-bottom: 0.5rem;
 }
 
 .grid-section {
